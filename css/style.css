@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ********************************************************************************************** */
+/* Header */
+header{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    /* background-color: brown; */
+    position: absolute;
+    z-index: 3;
+}
+
+
+.aInicio{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+    color: rgb(255, 255, 255);
+}
+
+.logoBrand{
+    display: flex;
+    justify-items: left;
+    text-align: left;
+    vertical-align: middle;
+    /* margin: 10px; */
+    padding: 10px 0px 0px 20px;
+}
+.logoHeader{
+    display: inline-block;
+    height: 40px;
+}
+
+.brandNameHeader{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.navList{
+    padding: 30px 0px 0px 30px;
+    font-size: 1.5rem; 
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+    vertical-align: middle; 
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    transition: all 0.2s;
+    z-index: 2;
+    height: min-content;
+}
+
+.navList a:hover{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.logIcon{
+    text-decoration: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s
+}
+.logIconH{
+    display: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+.logIcon:hover {
+    font-weight: bold;
+    color: rgb(223, 218, 148);
+}
+
+
+.aInicio:hover{
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: rgb(255, 255, 255);
+}
+/* ********************************************************************************************** */
+/* Video */
+
+.videoBack{
+    width: 100vh;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 300px 0px 0px 0px;
+}
+
+.vidInicio{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.botonMain{
+    position: absolute;
+    vertical-align: bottom;
+    z-index: 2;
+    padding: 700px 0px 0px 0px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+    .vidInicio{
+        display: none;
+    }
+
+    .videoBack{
+        height: 100vh;
+        background-image: url(../img/pexels-cottonbro-studio-4153146.jpg);
+        position: relative;
+        font-size: 0%;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+    }
+}
+
+/* ********************************************************************************************** */
+/*  */
+
+/* ********************************************************************************************* */
+/* Footer */
+footer{
+    background-color: #000000 ;
+    vertical-align: bottom;
+    color: white;
+}
+
+
+.footerBlock{
+    display: inline-block;
+    margin: auto;
+    border-top: black;
+    padding: 10px 20px;
+    vertical-align: top;
+}
+
+footer div ul li{
+    list-style: none;
+    margin: 0 5px;
+    color: white;
+ }
+ 
+ .logoLogIn{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+ }
+
+form{
+    margin-top: 30px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+input,
+textarea {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* ********************************************************************************************** */
