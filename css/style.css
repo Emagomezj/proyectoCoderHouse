@@ -114,6 +114,15 @@ nav ul li{
 .navbar-toggler-icon{
     color: rgb(255, 255, 255);
 }
+.headerCom{
+    background-color: #000;
+    box-shadow: white 2px;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 /* ********************************************************************************************** */
 /* Video */
 
@@ -168,13 +177,24 @@ nav ul li{
 
 /* ********************************************************************************************** */
 /*  */
-
+.tituloSeccion{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+}
 /* ********************************************************************************************* */
 /* Footer */
 footer{
     background-color: #000000 ;
     vertical-align: bottom;
     color: white;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
@@ -186,9 +206,14 @@ footer{
     vertical-align: top;
 }
 
-footer div ul li{
+footer ul li{
     list-style: none;
+    text-decoration: none;
     margin: 0 5px;
+    color: white;
+ }
+ footer a{
+    text-decoration: none;
     color: white;
  }
  
@@ -224,4 +249,21 @@ iframe{
     margin-bottom: 80px;
 }
 
+@media (max-width: 940px) {
+    .footerPres {
+      display: none;
+    }
+  }
+
+.divComunidad{
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20%;
+    background-color: blueviolet;
+    color: bisque;
+    margin: 2.5px;
+}
 /* ********************************************************************************************** */
