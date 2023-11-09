@@ -4,7 +4,7 @@
 }
 
 main{
-    min-height: 75vh;
+    min-height: 80vh;
     max-height: none;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(246,250,255,1) 100%);
@@ -313,7 +313,12 @@ form{
     1px 1px 0 #000,
     1px 1px 0 #000,
     1px 1px 0 #000;
+    transition: all 0.2s;
 }
+.registrarse:hover a{
+    font-weight: bold
+}
+
 form label{
     justify-content: center;
     align-items: center;
@@ -364,6 +369,11 @@ iframe{
 .comunidadContenedor{
     margin-bottom: 40px;
     color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .cuadro{
@@ -379,6 +389,11 @@ iframe{
     text-align: center;
     vertical-align: middle;
     color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .overlay p{
@@ -416,4 +431,35 @@ iframe{
     .overlay p{
         font-size: 18px;
     }
+}
+
+/* ********************************************************************************************** */
+/* Contacto */
+
+.contactoTitulo{
+    margin-top: 20px;
+}
+
+/* ********************************************************************************************** */
+/* Biblioteca */
+
+.aTablaBib{
+    text-decoration: none;
+    color: #000;
+    text-shadow:
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    transition: all 0.2s;
+}
+
+.aTablaBib:hover{
+    color: rgb(59, 150, 138);
+    font-weight: bold;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
 }
