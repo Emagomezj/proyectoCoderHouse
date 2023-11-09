@@ -138,12 +138,12 @@ nav ul li{
     font-weight: bold;
 }
 
-.navbar-toggler-icon{
-    color: rgb(255, 255, 255);
+.navbar-toggler{
+    justify-content: right;
 }
 .headerCom{
     background-color: rgb(0, 0, 0);
-    box-shadow: white 2px;
+    box-shadow: 2px white ;
     height: 65px;
     vertical-align: top;
     position: relative;
@@ -239,7 +239,6 @@ nav ul li{
 /* Footer */
 footer{
     background-color:rgb(0, 0, 0);
-    box-shadow: white 2px;
     vertical-align: bottom;
     color: white;
     bottom: 0;
@@ -353,6 +352,9 @@ iframe{
     }
   }
 
+
+/* ********************************************************************************************** */
+/* Comunidad */
 .divComunidad{
     align-items: center;
     text-align: center;
@@ -364,8 +366,7 @@ iframe{
     color: bisque;
     margin: 2.5px;
 }
-/* ********************************************************************************************** */
-/* Comunidad */
+
 .comunidadContenedor{
     margin-bottom: 40px;
     color: white;
@@ -408,6 +409,19 @@ iframe{
 .seccion-descripcion{
     font-size: 1.2rem;
     color: #111010;
+    text-shadow:    
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+.seccion-titulo{
+    text-shadow:    
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 
 .cuadroComunidad img{
