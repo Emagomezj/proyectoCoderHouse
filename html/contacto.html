@@ -59,19 +59,21 @@
         <h2>Contacto</h2>
         <form>
             <label for="Nombre">Nombre</label>
-            <input type="text" id="Nombre" placeholder="Esteban">
+            <input class="inputForms" type="text" id="Nombre" placeholder="Esteban">
 
             <label for="Apellido">Apellido</label>
-            <input type="text" id="Apellido" placeholder="Arias">
+            <input class="inputForms" type="text" id="Apellido" placeholder="Arias">
 
             <label for="email" >E-mail</label>
-            <input type="email" id="email" required placeholder="nombre@dominio.com">
+            <input class="inputForms" type="email" id="email" required placeholder="nombre@dominio.com">
 
             <label for="consulta">Consulta</label>
-            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Inserte aquí su consulta."></textarea>
+            <div><textarea class="inputForms" name="consulta" id="consulta" cols="30" rows="10" placeholder="Inserte aquí su consulta."></textarea></div>
 
-            <input type="submit">
-            <input type="reset">
+            <div>
+              <input type="submit">
+              <input type="reset">
+            </div>
 
 
         </form>
@@ -79,34 +81,36 @@
     </main>
     <footer>
                   
-        <div class="footerBlock">
-            <img src="../img/android-chrome-bk-512x512.png" alt="Logo" height="45px">
-            <h4>Heimdal.ib</h4>
-        </div>
+      <div class="footerBlock">
+          <a href="../index.html">
+              <img src="../img/android-chrome-bk-512x512.png" alt="Logo" height="45px">
+              <h4>Heimdal.ib</h4>
+          </a>
+      </div>
 
-        <div class="footerBlock footerPres">
-            <ul class="footerPres">
-                <h3>Servicios</h3>
-                <li><a href="">Lorem, ipsum.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-            </ul>
-        </div>
-        <div class="footerBlock">
-            <ul class="footerPres">
-                <h3>Sobre nosotros</h3>
-                <li><a href="">Lorem, ipsum.</a></li>
-                <li><a href="">Lorem</a></li>
-                <li><a href="">Lorem</a></li>
-            </ul>
-        </div>
-        <div class="footerBlock">
-            <ul>
-                <h3>¿Necesitas Ayuda?</h3>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
+      <div class="footerBlock footerPres">
+          <ul class="footerPres">
+              <h3>Servicios</h3>
+              <li><a class="aFooter" href="">Lorem, ipsum.</a></li>
+              <li><a class="aFooter" href="">Lorem, ipsum dolor.</a></li>
+              <li><a class="aFooter" href="">Lorem, ipsum dolor.</a></li>
+          </ul>
+      </div>
+      <div class="footerBlock">
+          <ul class="footerPres">
+              <h3>Sobre nosotros</h3>
+              <li><a class="aFooter" href="">Lorem, ipsum.</a></li>
+              <li><a class="aFooter" href="">Lorem</a></li>
+              <li><a class="aFooter" href="">Lorem</a></li>
+          </ul>
+      </div>
+      <div class="footerBlock">
+          <ul>
+              <h3>¿Necesitas Ayuda?</h3>
+              <li><a class="aFooter" href="faqs.html">FAQs</a></li>
+              <li><a class="aFooter" href="contacto.html">Contacto</a></li>
+          </ul>
+      </div>
 </footer>
 </body>
 </html>

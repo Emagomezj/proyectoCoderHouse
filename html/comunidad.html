@@ -31,8 +31,8 @@
    
    <nav class="navbar navbar-expand-lg col-lg-9">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <img class="navbar-toggler" src="../img/icons8-menú-wt.svg" alt="ícono Menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../img/icons8-menú-wt.svg" alt="ícono Menú">
       </button>
       <div class="collapse navbar-collapse navList dropdown" id="navbarToggler">
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
@@ -47,7 +47,7 @@
           </li>
           <li>
             <a href="./log-in.html">
-                <i class="bi bi-door-closed-fill logIcon"></i>
+                <i class="bi bi-door-closed-fill logIcon1"></i>
             </a>
         </li>
         </ul>
@@ -56,62 +56,111 @@
   </nav>
 </header>
     <main>
-<div class="container-fluid text-center"><h1 class="tituloSeccion">Comunidad</h1></div>
-
-<div class="container-fluid">
-    <div class="row d-flex align-items-center">
-        <div class="divComunidad col-12 col-md-6 col-lg-4">
-            <img src="../img/b&w-libroylentes.jpg" alt="Imagen" height="200px">
-            <h3>Nombre entrada</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos aut harum laboriosam doloremque, obcaecati atque cupiditate corporis officiis optio, excepturi perferendis eaque explicabo omnis animi amet esse corrupti temporibus debitis sunt ea asperiores? Ut laudantium nobis vero obcaecati architecto quisquam laborum alias, dolores reiciendis repellendus itaque cumque perferendis magnam.</p>
-        </div>
-        <div class="divComunidad col-12 col-md-6 col-lg-4">
-            <img src="../img/bibliotecaLuz.jpg" alt="Imagen" height="200px">
-            <h3>Una gran experiencia</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos aut harum laboriosam doloremque, obcaecati atque cupiditate corporis officiis optio, excepturi perferendis eaque explicabo omnis animi amet esse corrupti temporibus debitis sunt ea asperiores? Ut laudantium nobis vero obcaecati architecto quisquam laborum alias, dolores reiciendis repellendus itaque cumque perferendis magnam.</p>
-        </div>
-        <div class="divComunidad col-12 col-md-6 col-lg-4">
-            <img src="../img/libroLentesReloj.jpg" alt="Imagen" height="200px">
-            <h3>Nombre entrada</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos aut harum laboriosam doloremque, obcaecati atque cupiditate corporis officiis optio, excepturi perferendis eaque explicabo omnis animi amet esse corrupti temporibus debitis sunt ea asperiores? Ut laudantium nobis vero obcaecati architecto quisquam laborum alias, dolores reiciendis repellendus itaque cumque perferendis magnam.</p>
-        </div>
-        <div class="divComunidad col-12 col-md-6 col-lg-4">
-            <img src="../img/libroHojas.jpg" alt="Imagen" height="200px">
-            <h3>Nombre entrada</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos aut harum laboriosam doloremque, obcaecati atque cupiditate corporis officiis optio, excepturi perferendis eaque explicabo omnis animi amet esse corrupti temporibus debitis sunt ea asperiores? Ut laudantium nobis vero obcaecati architecto quisquam laborum alias, dolores reiciendis repellendus itaque cumque perferendis magnam.</p>
+    <section id="comunidad" class="cuadroComunidad d-flex flex-column">
+   <div class="container-fluid align-items-center text-center d-flex justify-content-center">
+        <div class="row">
+        <h1 class="seccion-titulo texto-negro col-12">Comunidad</h1>
+        <h2 class="seccion-descripcion col-12">Únete a la maravillosa comunidad de Heimdal.ib</h2>
+    </div>
+   </div>
+<!-- Cuadros -->
+    <div class="container text-center comunidadContenedor">
+        <div class="row">
+        <!-- Cuadro 1 -->
+             <div class="col-12 col-md-6 col-lg-4">
+              <div class="cuadro">
+                <img src="../img/bibliotecaLuz.jpg" alt="Imagen">
+                    <div class="overlay">
+                      <p>Comparte lecturas, experiencias y opiniones. </p>
+                      </div>
+                      <h3 class="tituloCuadro">Intercambios enriquecedores</h3>
+                    </div>
+            </div>
+        <!-- Cuadro 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cuadro">
+              <img src="../img/libroLentesReloj.jpg" alt="Imagen">
+              <div class="overlay">
+                <p>Recomienda, rankea y comparte para que todos y todas conozcan esos libros que te enamoraron </p>
+                </div>
+                <h3 class="tituloCuadro">Construye la comunidad</h3>
+              </div>
+            </div>
+        <!-- Cuadro 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cuadro">
+              <img src="../img/libroHojas.jpg" alt="Imagen">
+              <div class="overlay">
+                <p>Accede y participa de listas de reproducción colaborativas para acompañar tu lectura </p>
+                </div>
+                <h3 class="tituloCuadro">Accede a recursos</h3>
+              </div>
+            </div>
+        <!-- Cuadro 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cuadro">
+              <img src="../img/libroCafeMarcadorFAzul.jpg" alt="Imagen">
+              <div class="overlay">
+                <p>Busca recomendaciones y encuentra tu próxima lectura </p>
+                </div>
+                <h3 class="tituloCuadro">Accede a reseñas</h3>
+              </div>
+            </div>
+        <!-- Cuadro 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cuadro">
+              <img src="../img/biblioteca.jpg" alt="Imagen">
+              <div class="overlay">
+                <p>Intercambia libros y manuscritos con otros/as miembros/as de la comunidad </p>
+                </div>
+                <h3 class="tituloCuadro">Completa tu biblioteca</h3>
+              </div>
+            </div>
+        <!-- Cuadro 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="cuadro">
+              <img src="../img/pexels-abby-chung-1106468.jpg" alt="Imagen">
+              <div class="overlay">
+                <p>Comparte tu biblioteca con el mundo para que más personas la conozcan </p>
+                </div>
+                <h3 class="tituloCuadro">Extiende tus horizontes</h3>
+              </div>
+            </div>
         </div>
     </div>
-</div>
+
 
     </main>
     <footer>
                   
         <div class="footerBlock">
-            <img src="../img/android-chrome-bk-512x512.png" alt="Logo" height="45px">
-            <h4>Heimdal.ib</h4>
+            <a href="../index.html">
+                <img src="../img/android-chrome-bk-512x512.png" alt="Logo" height="45px">
+                <h4>Heimdal.ib</h4>
+            </a>
         </div>
 
         <div class="footerBlock footerPres">
             <ul class="footerPres">
                 <h3>Servicios</h3>
-                <li><a href="">Lorem, ipsum.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
-                <li><a href="">Lorem, ipsum dolor.</a></li>
+                <li><a class="aFooter" href="">Lorem, ipsum.</a></li>
+                <li><a class="aFooter" href="">Lorem, ipsum dolor.</a></li>
+                <li><a class="aFooter" href="">Lorem, ipsum dolor.</a></li>
             </ul>
         </div>
         <div class="footerBlock">
             <ul class="footerPres">
                 <h3>Sobre nosotros</h3>
-                <li><a href="">Lorem, ipsum.</a></li>
-                <li><a href="">Lorem</a></li>
-                <li><a href="">Lorem</a></li>
+                <li><a class="aFooter" href="">Lorem, ipsum.</a></li>
+                <li><a class="aFooter" href="">Lorem</a></li>
+                <li><a class="aFooter" href="">Lorem</a></li>
             </ul>
         </div>
         <div class="footerBlock">
             <ul>
                 <h3>¿Necesitas Ayuda?</h3>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="aFooter" href="faqs.html">FAQs</a></li>
+                <li><a class="aFooter" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
 </footer>

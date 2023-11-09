@@ -3,7 +3,22 @@
     padding: 0;
 }
 
+main{
+    min-height: 75vh;
+    max-height: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(246,250,255,1) 100%);
+}
 
+.inputForms{
+    width: 45%;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .inputForms{
+        width: 80%
+    }
+}
 /* ********************************************************************************************** */
 /* Header */
 header{
@@ -103,9 +118,21 @@ nav ul li{
 
 .logIcon:hover {
     font-weight: bold;
-    color: rgb(223, 218, 148);
+    color: rgb(59, 150, 138);
 }
 
+.logIcon1{
+    text-decoration: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s
+}
+
+.logIcon1:hover {
+    font-weight: bold;
+    color: rgb(4, 218, 247);
+}
 
 .aInicio:hover{
     font-weight: bold;
@@ -115,14 +142,22 @@ nav ul li{
     color: rgb(255, 255, 255);
 }
 .headerCom{
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     box-shadow: white 2px;
+    height: 65px;
     vertical-align: top;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
+    vertical-align: middle;
 }
+@media screen and (max-width: 760px){
+    .headerCom{
+        height: min-content;
+    }
+}
+
 /* ********************************************************************************************** */
 /* Video */
 
@@ -158,6 +193,21 @@ nav ul li{
     text-align: center;
     align-items: center;
 }
+.btn-outline-success{
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    border-color: #6d6767;
+    background-color: #7c7878;
+    
+}
+.btn-outline-success:hover {
+    background-color: rgb(59, 150, 138);
+    border-color: rgb(29, 95, 86);
+}
 
 @media screen and (max-width: 760px) {
     .vidInicio{
@@ -188,10 +238,10 @@ nav ul li{
 /* ********************************************************************************************* */
 /* Footer */
 footer{
-    background-color: #000000 ;
+    background-color:rgb(0, 0, 0);
+    box-shadow: white 2px;
     vertical-align: bottom;
     color: white;
-    
     bottom: 0;
     left: 0;
     right: 0;
@@ -216,15 +266,58 @@ footer ul li{
     text-decoration: none;
     color: white;
  }
+
+ .aFooter{
+    transition: all 0.2s;
+ }
+
+ .aFooter:hover{
+    font-weight: bold;
+ }
  
  .logoLogIn{
     display: block;
     text-align: center;
     margin-top: 30px;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 2rem;
  }
 
 form{
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.registrarse{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.registrarse a{
+    text-decoration: none;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+form label{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 label{
@@ -267,3 +360,60 @@ iframe{
     margin: 2.5px;
 }
 /* ********************************************************************************************** */
+/* Comunidad */
+.comunidadContenedor{
+    margin-bottom: 40px;
+    color: white;
+}
+
+.cuadro{
+    position: relative;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+}
+
+.overlay p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.cuadroComunidad{
+    justify-content: center;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #111010;
+}
+
+.cuadroComunidad img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.cuadro:hover img{
+    opacity: 0.2;
+}
+
+.cuadro:hover .overlay{
+    opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .overlay p{
+        font-size: 18px;
+    }
+}
