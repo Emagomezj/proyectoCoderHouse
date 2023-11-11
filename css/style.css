@@ -14,6 +14,12 @@ main{
     width: 45%;
     text-align: center;
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 600px) {
     .inputForms{
         width: 80%
@@ -32,6 +38,9 @@ header{
     /* background-color: brown; */
     position: absolute;
     z-index: 3;
+}
+.headerHome{
+    height: 50px;
 }
 
 
@@ -53,8 +62,18 @@ nav ul li{
     text-align: left;
     vertical-align: middle;
     /* margin: 10px; */
-    padding: 10px 0px 0px 20px;
+    padding: 0px 0px 10px 10px;
 }
+
+.logoBrandHome{
+    display: flex;
+    justify-items: left;
+    text-align: left;
+    vertical-align: middle;
+    /* margin: 10px; */
+    padding: 20px 0px 0px 10px;
+}
+
 .logoHeader{
     display: inline-block;
     height: 40px;
@@ -141,10 +160,10 @@ nav ul li{
 .navbar-toggler{
     justify-content: right;
 }
+
 .headerCom{
     background-color: rgb(0, 0, 0);
-    box-shadow: 2px white ;
-    height: 65px;
+    min-height: 65px;
     vertical-align: top;
     position: relative;
     top: 0;
@@ -152,14 +171,41 @@ nav ul li{
     right: 0;
     vertical-align: middle;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 992px){
     .headerCom{
         height: min-content;
+    }
+    .logoBrand{
+        vertical-align: middle;
+        align-items: flex-start;
+    }
+    header{
+        vertical-align: middle;
+        align-items: flex-start;
+    }
+    .navList{
+        justify-content: left;
+        justify-items: left;
+    }
+
+    .logoHeader{
+        height: 30px;
+    }
+    .brandNameHeader{
+        font-size: 1.5rem;
+    }
+    .menuIcon{
+        height: 30px;
+    }
+
+    .headerHome{
+        height: auto;
+        min-height: 60px;
     }
 }
 
 /* ********************************************************************************************** */
-/* Video */
+/* Home */
 
 .videoBack{
     width: 100vh;
@@ -187,7 +233,7 @@ nav ul li{
     position: absolute;
     vertical-align: bottom;
     z-index: 2;
-    padding: 700px 0px 0px 0px;
+    padding-top: 80vh;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -209,20 +255,68 @@ nav ul li{
     border-color: rgb(29, 95, 86);
 }
 
+.homeSm{
+    display: none;
+}
+
+.tituloHomeSm{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    width: 80vw;
+    border-radius: 10px;
+    min-height: 65px;
+    background-color: #000;
+    box-shadow: 10px 10px 20px black;
+}
+
+.contenidoHomeSm{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 @media screen and (max-width: 760px) {
     .vidInicio{
         display: none;
     }
 
     .videoBack{
-        height: 100vh;
-        background-image: url(../img/pexels-cottonbro-studio-4153146.jpg);
-        position: relative;
-        font-size: 0%;
-        margin: 0px;
-        padding: 0px;
-        object-fit: cover;
+       display:none
     }
+    .headerHome{
+        position: relative;
+        vertical-align: middle;
+        min-height: 65px;
+    }
+    header{
+        background-color:rgb(0, 0, 0);
+        color: white;
+        min-height: 65px;
+    }
+    .botonMain{
+        display: none;
+    }
+    .homeSm{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+    }
+    
 }
 
 /* ********************************************************************************************** */
@@ -241,9 +335,7 @@ footer{
     background-color:rgb(0, 0, 0);
     vertical-align: bottom;
     color: white;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    justify-content: end;
 }
 
 
@@ -274,7 +366,7 @@ footer ul li{
     font-weight: bold;
  }
  
- .logoLogIn{
+ /* .logoLogIn{
     display: block;
     text-align: center;
     margin-top: 30px;
@@ -285,7 +377,10 @@ footer ul li{
     1px 1px 0 #000,
     1px 1px 0 #000;
     font-size: 2rem;
- }
+ } */
+
+/* ********************************************************************************************** */
+/* Forms & iframe's */
 
 form{
     margin-top: 30px;
@@ -349,6 +444,9 @@ iframe{
 @media (max-width: 940px) {
     .footerPres {
       display: none;
+    }
+    iframe{
+        width: 80vw;
     }
   }
 
@@ -447,6 +545,28 @@ iframe{
     }
 }
 
+@media (768px <= width <= 991px) {
+    .overlay p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1050px){
+    .overlay p{
+        font-size: 15px;
+    }
+}
+
+.aForos{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btnForos{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
 /* ********************************************************************************************** */
 /* Contacto */
 
@@ -477,3 +597,29 @@ iframe{
     1px 1px 0 #000,
     1px 1px 0 #000;
 }
+
+/* ********************************************************************************************** */
+/* Log-In y registrarse*/
+
+.logoLogIn{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+ }
+
+ .logoLogInImg{
+    height: 100px;
+ }
+
+ .brandLogIn{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+ }

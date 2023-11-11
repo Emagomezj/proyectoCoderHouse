@@ -19,8 +19,16 @@
 </head>
 <body>
 <header class="headerCom">
-    <!-- Logo y Brand Name -->
-   <div class="logoBrand col-lg-3">
+    
+   
+   <nav class="container-fluid navbar navbar-expand-lg" >
+    <div class="container-fluid d-flex">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="menuIcon" src="../img/icons8-menú-wt.svg" alt="ícono Menú">
+      </button>
+      <div class="collapse navbar-collapse navList dropdown flex-column flex-lg-row" id="navbarToggler">
+        <!-- Logo y Brand Name -->
+   <div class="logoBrand align-items-center justify-content-lg-start col-12 col-lg-3">
         <a href="../index.html">
         <img class="logoHeader" src="../img/android-chrome-bk-512x512.png" alt="Logo"> 
         </a>
@@ -28,14 +36,8 @@
         <p class="brandNameHeader"> Heimdal.ib</p>
         </a>
    </div>
-   
-   <nav class="container-fluid navbar navbar-expand-lg col-lg-9">
-    <div class="container-fluid d-flex">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="../img/icons8-menú-wt.svg" alt="ícono Menú">
-      </button>
-      <div class="collapse navbar-collapse navList dropdown" id="navbarToggler">
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <!-- Nav List -->
+   <ul class="navbar-nav d-flex align-items-center justify-content-lg-end col-12 col-lg-9">
           <li class="nav-item">
             <a class="nav-link aInicio" href="../html/comunidad.html">Comunidad</a>
           </li>
@@ -81,7 +83,7 @@
             <div class="cuadro">
               <img src="../img/libroLentesReloj.jpg" alt="Imagen libro, lentes y reloj">
               <div class="overlay">
-                <p>Recomienda, rankea y comparte para que todos y todas conozcan esos libros que te enamoraron </p>
+                <p class="cuadroTexto">Recomienda, rankea y comparte para que todos y todas conozcan esos libros que te enamoraron </p>
                 </div>
                 <h3 class="tituloCuadro">Construye la comunidad</h3>
               </div>
@@ -129,9 +131,12 @@
         </div>
     </div>
 
+    <div class="container-fluid justify-content-center d-flex flex-column align-items-center">
+      <a href="./foros.html" class="aForos"><button type="button" class="btn btn-light btnForos">Acceso a Foros</button></a>
+    </div>
 
     </main>
-    <footer>
+    <footer class="footerHome justify-content-end">
                   
         <div class="footerBlock">
             <a href="../index.html">
@@ -164,5 +169,6 @@
             </ul>
         </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
