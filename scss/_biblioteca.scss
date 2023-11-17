@@ -1,0 +1,14 @@
+main{
+    span{
+        .aTablaBib{
+            text-decoration: none;
+            color: #000;
+            text-shadow: $whiteShadow;
+            transition: all 0.2s;
+            &:hover{
+                    font-weight: bold;
+                    text-shadow: $whiteShadow;
+            }
+        }
+    }
+}

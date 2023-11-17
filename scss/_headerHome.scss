@@ -1,0 +1,92 @@
+.headerHome{
+    height: 50px;
+    @include nueveNoventayDos{
+        height: auto;
+        min-height: 60px;
+    }
+    @include sieteSesenta{
+        position: relative;
+        vertical-align: middle;
+        min-height: 65px;
+    }
+    .logoBrandHome{
+        display: flex;
+        justify-items: left;
+        text-align: left;
+        vertical-align: middle;
+        padding: 20px 0px 0px 10px;
+        a{
+            .brandNameHeader{
+                display: inline-block;
+                font-size: 2rem;
+                font-family: $fFam;
+                margin: 0px 0px 0px 10px;
+                font-weight: bold;
+                vertical-align: middle;
+                color: white;
+                text-shadow:$blackShadow;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                &:hover{
+                    font-weight: bold;}
+                @include nueveNoventayDos{
+                    font-size: 1.5rem;
+                }
+            }
+            .logoHeader{
+                display: inline-block;
+                height: 40px;
+                @include nueveNoventayDos{
+                    height: 30px;
+                }
+            }
+        }
+        
+    }
+    nav{
+        .navList{
+            padding: 30px 0px 0px 30px;
+            font-size: 1.5rem; 
+            display: flex;
+            font-family: $fFam;
+            font-weight: normal;
+            text-align: right;
+            justify-content: right;
+            justify-items: right;
+            vertical-align: middle; 
+            color: rgb(255, 255, 255);
+            text-shadow:$blackShadow;
+            transition: $transition;
+            z-index: 2;
+            height: auto;
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0px 5px;
+                    color: rgb(255, 255, 255);
+                    .aInicio{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                    a{
+                        .logIcon{
+                            text-decoration: none;
+                            font-size: 2rem;
+                            width: 20px;
+                            color: #ffffff;
+                            transition: $transition;
+                            &:hover{
+                                font-weight: bold;
+                                color: rgb(59, 150, 138);
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

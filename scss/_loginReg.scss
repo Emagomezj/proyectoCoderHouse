@@ -1,0 +1,75 @@
+main{
+    .logoLogIn{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            .logoLogInImg{
+                height: 100px;
+            }
+            .brandLogIn{
+                font-size: 2rem;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                vertical-align: middle;
+                color: rgb(255, 255, 255);
+                text-shadow: $blackShadow;
+            }
+        }
+    }
+    form{
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        text-shadow: $blackShadow;
+        label{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            // text-align: left;
+        }
+        input{
+            align-items: center;
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        textarea{
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .inputForms{
+            width: 45%;
+            text-align: center;
+            @include seiscientos{
+                width: 80%
+            }
+        }
+    }
+    .registrarse{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color: white;
+                text-shadow:$blackShadow;
+                transition: all 0.2s;
+                &:hover{
+                    font-weight: bold
+                }
+            }
+    }   
+}

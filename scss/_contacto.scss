@@ -1,0 +1,57 @@
+.contacto{
+    .contactoTitulo{
+        margin-top: 20px;
+        text-shadow: $whiteShadow;
+    }
+    .formContacto{
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+        text-shadow: $whiteShadow;
+        label{
+            color: black;
+            text-shadow: $whiteShadow;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            // text-align: left;
+        }
+        input{
+            align-items: center;
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        textarea{
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .inputForms{
+            width: 45%;
+            text-align: center;
+            @include seiscientos{
+                width: 80%
+            }
+        }
+    }
+    iframe{
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        @include nueveCuarenta{
+            width: 80vw;
+        }
+    }
+}
