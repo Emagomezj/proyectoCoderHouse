@@ -1,3 +1,7 @@
+//Imports
+
+@import "mediaQuerys";
+
 //Variables
 $nab-foot-color: black;
 $blackShadow :
@@ -40,11 +44,28 @@ header{
     height: 60px;
     position: absolute;
     z-index: 3;
-
+    @include nueveNoventayDos{
+        vertical-align: middle;
+        align-items: flex-start;
+    }
+    @include sieteSesenta{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        min-height: 65px;
+    }
 }
 //Header Home
 .headerHome{
     height: 50px;
+    @include nueveNoventayDos{
+        height: auto;
+        min-height: 60px;
+    }
+    @include sieteSesenta{
+        position: relative;
+        vertical-align: middle;
+        min-height: 65px;
+    }
     .logoBrandHome{
         display: flex;
         justify-items: left;
@@ -65,10 +86,16 @@ header{
                 color: rgb(255, 255, 255);
                 &:hover{
                     font-weight: bold;}
+                @include nueveNoventayDos{
+                    font-size: 1.5rem;
+                }
             }
             .logoHeader{
                 display: inline-block;
                 height: 40px;
+                @include nueveNoventayDos{
+                    height: 30px;
+                }
             }
         }
         
@@ -130,12 +157,19 @@ header{
     left: 0;
     right: 0;
     vertical-align: middle;
+    @include nueveNoventayDos{
+        height: min-content;
+    }
     .logoBrand{
         display: flex;
         justify-items: left;
         text-align: left;
         vertical-align: middle;
         padding: 20px 0px 0px 10px;
+        @include nueveNoventayDos{
+            vertical-align: middle;
+            align-items: flex-start;
+        }
         a{
             .brandNameHeader{
                 display: inline-block;
@@ -154,6 +188,9 @@ header{
             .logoHeader{
                 display: inline-block;
                 height: 40px;
+                @include nueveNoventayDos{
+                    height: 30px;
+                }
             }
         }
         
@@ -161,9 +198,12 @@ header{
     nav{
         div{
             .navbar-toggler{
-                justify-content: right;
+                justify-content: left;
                 .menuIcon{
                     height: 30px;
+                    @include nueveNoventayDos{
+                        height: 30px;
+                    }
                 }
             }
         }
@@ -182,6 +222,10 @@ header{
             transition: $transition;
             z-index: 2;
             height: min-content;
+            @include nueveNoventayDos{
+                justify-content: left;
+                justify-items: left;
+            }
             ul{
                 li{
                     list-style: none;
@@ -226,6 +270,9 @@ main{
             position: absolute;
             z-index: 1;
             object-fit: cover;
+            @include sieteSesenta{
+                display: none;
+            }
         }
     }
     .botonMain{
@@ -237,6 +284,9 @@ main{
         width: 100%;
         text-align: center;
         align-items: center;
+        @include sieteSesenta{
+            display: none;
+        }
         a{
             .btn-outline-success{
                 color: rgb(255, 255, 255);
@@ -262,9 +312,18 @@ main{
         text-align: center;
         vertical-align: middle;
         padding: 300px 0px 0px 0px;
+        @include sieteSesenta{
+            display: none;
+        }
     }
     .homeSm{
         display: none;
+        @include sieteSesenta{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 30px;
+        }
         .tituloHomeSm{
             margin-top: 10px;
             font-family: $fFam;
@@ -289,7 +348,7 @@ main{
         }
     }
 }
-//Main Pages
+//Comunidad
 main{
     .cuadroComunidad{
         justify-content: center;
@@ -352,6 +411,15 @@ main{
                                 font-size: 20px;
                                 font-weight: bold;
                                 margin-bottom: 0;
+                                @include cuatrocientos{
+                                    font-size: 18px;
+                                }
+                                @include rango2{
+                                    font-size: 15px;
+                                }
+                                @include rango1{
+                                    font-size: 18px;
+                                }
                             }
                         }
 
@@ -440,6 +508,9 @@ main{
         .inputForms{
             width: 45%;
             text-align: center;
+            @include seiscientos{
+                width: 80%
+            }
         }
     }
     .registrarse{
@@ -525,6 +596,9 @@ main{
         .inputForms{
             width: 45%;
             text-align: center;
+            @include seiscientos{
+                width: 80%
+            }
         }
     }
     iframe{
@@ -532,6 +606,9 @@ main{
         margin: auto;
         margin-top: 80px;
         margin-bottom: 80px;
+        @include nueveCuarenta{
+            width: 80vw;
+        }
     }
 }
 //Footer all
@@ -540,6 +617,11 @@ footer{
     vertical-align: bottom;
     color: white;
     justify-content: end;    
+    .footerPres{
+        @include nueveCuarenta{
+            display: none;
+        }
+    }
     .footerBlock{
         display: inline-block;
         margin: auto;
@@ -574,3 +656,4 @@ footer{
     }
 }
 
+//Media Query's
