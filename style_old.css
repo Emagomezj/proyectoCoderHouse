@@ -1,0 +1,627 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* main{
+    min-height: 80vh;
+    max-height: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(246,250,255,1) 100%);
+} */
+
+/* .inputForms{
+    width: 45%;
+    text-align: center;
+} */
+/* body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+@media (max-width: 600px) {
+    .inputForms{
+        width: 80%
+    }
+}
+/* ********************************************************************************************** */
+/* Header */
+
+
+/* header{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    position: absolute;
+    z-index: 3;
+} */
+/* .headerHome{
+    height: 50px;
+} */
+
+
+/* .aInicio{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+} */
+
+/* nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+    color: rgb(255, 255, 255);
+} */
+
+/* .logoBrand{
+    display: flex;
+    justify-items: left;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0px 0px 10px 10px;
+} */
+
+/* .logoBrandHome{
+    display: flex;
+    justify-items: left;
+    text-align: left;
+    vertical-align: middle;
+    padding: 20px 0px 0px 10px;
+} */
+
+/* .logoHeader{
+    display: inline-block;
+    height: 40px;
+} */
+
+/* .brandNameHeader{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/* .navList{
+    padding: 30px 0px 0px 30px;
+    font-size: 1.5rem; 
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+    vertical-align: middle; 
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    transition: all 0.2s;
+    z-index: 2;
+    height: min-content;
+} */
+
+/* .navList a:hover{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+} */
+
+/* .logIcon{
+    text-decoration: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s
+} */
+/* .logIcon:hover {
+    font-weight: bold;
+    color: rgb(59, 150, 138);
+} */
+
+.logIconH{
+    display: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+
+.logIcon1{
+    text-decoration: none;
+    font-size: 2rem;
+    width: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s
+}
+
+.logIcon1:hover {
+    font-weight: bold;
+    color: rgb(4, 218, 247);
+}
+
+/* .aInicio:hover{
+    font-weight: bold;
+} */
+
+/* .navbar-toggler{
+    justify-content: right;
+} */
+
+/* .headerCom{
+    background-color: rgb(0, 0, 0);
+    min-height: 65px;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+} */
+@media screen and (max-width: 992px){
+    .headerCom{
+        height: min-content;
+    }
+    .logoBrand{
+        vertical-align: middle;
+        align-items: flex-start;
+    }
+    header{
+        vertical-align: middle;
+        align-items: flex-start;
+    }
+    .navList{
+        justify-content: left;
+        justify-items: left;
+    }
+
+    .logoHeader{
+        height: 30px;
+    }
+    .brandNameHeader{
+        font-size: 1.5rem;
+    }
+    .menuIcon{
+        height: 30px;
+    }
+
+    .headerHome{
+        height: auto;
+        min-height: 60px;
+    }
+}
+
+/* ********************************************************************************************** */
+/* Home */
+
+/* .videoBack{
+    width: 100vh;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 300px 0px 0px 0px;
+} */
+
+/* .vidInicio{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+} */
+
+/* .botonMain{
+    position: absolute;
+    vertical-align: bottom;
+    z-index: 2;
+    padding-top: 80vh;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+} */
+/* .btn-outline-success{
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    border-color: #6d6767;
+    background-color: #7c7878;
+    
+} */
+/* .btn-outline-success:hover {
+    background-color: rgb(59, 150, 138);
+    border-color: rgb(29, 95, 86);
+} */
+
+/* .homeSm{
+    display: none;
+} */
+
+/* .tituloHomeSm{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    width: 80vw;
+    border-radius: 10px;
+    min-height: 65px;
+    background-color: #000;
+    box-shadow: 10px 10px 20px black;
+} */
+
+/* .contenidoHomeSm{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+@media screen and (max-width: 760px) {
+    .vidInicio{
+        display: none;
+    }
+
+    .videoBack{
+       display:none
+    }
+    .headerHome{
+        position: relative;
+        vertical-align: middle;
+        min-height: 65px;
+    }
+    header{
+        background-color:rgb(0, 0, 0);
+        color: white;
+        min-height: 65px;
+    }
+    .botonMain{
+        display: none;
+    }
+    .homeSm{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+    }
+    
+}
+
+/* ********************************************************************************************** */
+/*  */
+.tituloSeccion{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+}
+/* ********************************************************************************************* */
+/* Footer */
+
+
+/* footer{
+    background-color:rgb(0, 0, 0);
+    vertical-align: bottom;
+    color: white;
+    justify-content: end;
+} */
+
+
+/* .footerBlock{
+    display: inline-block;
+    margin: auto;
+    border-top: black;
+    padding: 10px 20px;
+    vertical-align: top;
+} */
+
+/* footer ul li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 5px;
+    color: white;
+ } */
+ /* footer a{
+    text-decoration: none;
+    color: white;
+ } */
+
+ /* .aFooter{
+    transition: all 0.2s;
+ } */
+
+ /* .aFooter:hover{
+    font-weight: bold;
+ } */
+ 
+ /* .logoLogIn{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 2rem;
+ } */
+
+/* ********************************************************************************************** */
+/* Forms & iframe's */
+
+/* form{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+/* .registrarse{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} */
+/* .registrarse a{
+    text-decoration: none;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+    transition: all 0.2s;
+} */
+/* .registrarse:hover a{
+    font-weight: bold
+} */
+
+/* form label{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+} */
+/* input,
+textarea {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+} */
+
+iframe{
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 940px) {
+    .footerPres {
+      display: none;
+    }
+    iframe{
+        width: 80vw;
+    }
+  }
+
+
+/* ********************************************************************************************** */
+/* Comunidad */
+.divComunidad{
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20%;
+    background-color: blueviolet;
+    color: bisque;
+    margin: 2.5px;
+}
+
+/* .comunidadContenedor{
+    margin-bottom: 40px;
+    color: white;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/* .cuadro{
+    position: relative;
+} */
+/* .overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/* .overlay p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+} */
+/* .cuadroComunidad{
+    justify-content: center;
+} */
+
+/* .seccion-descripcion{
+    font-size: 1.2rem;
+    color: #111010;
+    text-shadow:    
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+} */
+
+/* .seccion-titulo{
+    text-shadow:    
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+} */
+
+/* .cuadroComunidad img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+} */
+
+/* .cuadro:hover img{
+    opacity: 0.2;
+} */
+
+/* .cuadro:hover .overlay{
+    opacity: 1;
+} */
+
+@media screen and (max-width: 400px) {
+    .overlay p{
+        font-size: 18px;
+    }
+}
+
+@media (768px <= width <= 991px) {
+    .overlay p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1050px){
+    .overlay p{
+        font-size: 15px;
+    }
+}
+
+/* .aForos{
+    margin-top: 20px;
+    margin-bottom: 40px;
+} */
+/* .btnForos{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+} */
+
+/* ********************************************************************************************** */
+/* Contacto */
+
+.contactoTitulo{
+    margin-top: 20px;
+}
+
+/* ********************************************************************************************** */
+/* Biblioteca */
+
+/* .aTablaBib{
+    text-decoration: none;
+    color: #000;
+    text-shadow:
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+    transition: all 0.2s;
+} */
+
+/* .aTablaBib:hover{
+    color: rgb(59, 150, 138);
+    font-weight: bold;
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+} */
+
+/* ********************************************************************************************** */
+/* Log-In y registrarse*/
+
+/* .logoLogIn{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+ } */
+
+ /* .logoLogInImg{
+    height: 100px;
+ } */
+
+ /* .brandLogIn{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+ } */
