@@ -240,12 +240,12 @@ header{
                         }
                     }
                     a{
-                        .logIcon{
+                        .logIcon1{
                             text-decoration: none;
                             font-size: 2rem;
                             width: 20px;
                             color: #ffffff;
-                            transition: $transition;
+                            transition:$transition;
                             &:hover{
                                 font-weight: bold;
                                 color: rgb(59, 150, 138);

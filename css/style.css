@@ -327,14 +327,14 @@ header {
 .headerCom nav .navList ul li .aInicio:hover {
   font-weight: bold;
 }
-.headerCom nav .navList ul li a .logIcon {
+.headerCom nav .navList ul li a .logIcon1 {
   text-decoration: none;
   font-size: 2rem;
   width: 20px;
   color: #ffffff;
   transition: all 0.2s;
 }
-.headerCom nav .navList ul li a .logIcon:hover {
+.headerCom nav .navList ul li a .logIcon1:hover {
   font-weight: bold;
   color: rgb(59, 150, 138);
 }
