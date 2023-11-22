@@ -44,10 +44,14 @@
         
     }
     nav{
+        button{
+            .menuIcon{
+                height: 35px;
+            }
+        }
         .navList{
             padding: 30px 0px 0px 30px;
             font-size: 1.5rem; 
-            display: flex;
             font-family: $fFam;
             font-weight: normal;
             text-align: right;
@@ -58,7 +62,6 @@
             text-shadow:$blackShadow;
             transition: $transition;
             z-index: 2;
-            height: auto;
             ul{
                 li{
                     list-style: none;

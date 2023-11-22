@@ -118,7 +118,7 @@ header {
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  height: 60px;
+  min-height: 60px;
   position: absolute;
   z-index: 3;
 }
@@ -126,6 +126,7 @@ header {
   header {
     vertical-align: middle;
     align-items: flex-start;
+    height: auto;
   }
 }
 @media screen and (max-width: 760px) {
@@ -188,10 +189,12 @@ header {
     height: 30px;
   }
 }
+.headerHome nav button .menuIcon {
+  height: 35px;
+}
 .headerHome nav .navList {
   padding: 30px 0px 0px 30px;
   font-size: 1.5rem;
-  display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   text-align: right;
@@ -202,7 +205,6 @@ header {
   text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
   transition: all 0.2s;
   z-index: 2;
-  height: auto;
 }
 .headerHome nav .navList ul li {
   list-style: none;
@@ -272,6 +274,11 @@ header {
 .headerCom .logoBrand a .brandNameHeader:hover {
   font-weight: bold;
 }
+@media screen and (max-width: 992px) {
+  .headerCom .logoBrand a .brandNameHeader {
+    font-size: 1.5rem;
+  }
+}
 .headerCom .logoBrand a .logoHeader {
   display: inline-block;
   height: 40px;
@@ -295,7 +302,6 @@ header {
 .headerCom nav .navList {
   padding: 30px 0px 0px 30px;
   font-size: 1.5rem;
-  display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   text-align: right;
@@ -306,7 +312,7 @@ header {
   text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
   transition: all 0.2s;
   z-index: 2;
-  min-height: 65px;
+  min-height: 60px;
 }
 @media screen and (max-width: 992px) {
   .headerCom nav .navList {

@@ -35,6 +35,9 @@
                 color: rgb(255, 255, 255);
                 &:hover{
                     font-weight: bold;}
+                @include nueveNoventayDos{
+                    font-size: 1.5rem;
+                }
             }
             .logoHeader{
                 display: inline-block;
@@ -61,7 +64,6 @@
         .navList{
             padding: 30px 0px 0px 30px;
             font-size: 1.5rem; 
-            display: flex;
             font-family: $fFam;
             font-weight: normal;
             text-align: right;
@@ -72,7 +74,7 @@
             text-shadow:$blackShadow;
             transition: $transition;
             z-index: 2;
-            min-height: 65px;
+            min-height: 60px;
             @include nueveNoventayDos{
                 justify-content: left;
                 justify-items: left;
