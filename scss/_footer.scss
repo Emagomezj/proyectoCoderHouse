@@ -2,18 +2,19 @@ footer{
     background-color:rgb(0, 0, 0);
     vertical-align: bottom;
     color: white;
-    justify-content: end;    
+    justify-content: space-between;    
     .footerPres{
         @include nueveCuarenta{
             display: none;
         }
     }
     .footerBlock{
-        display: inline-block;
+        display: flex;
         margin: auto;
         border-top: black;
         padding: 10px 20px;
         vertical-align: top;
+        justify-content: space-between;
        a{
             text-decoration: none;
             img{

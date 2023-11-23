@@ -105,7 +105,7 @@ body {
 }
 
 main {
-  min-height: 82vh;
+  min-height: 85vh;
   max-height: none;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(246, 250, 255) 100%);
@@ -646,7 +646,7 @@ main .logoLogIn a .brandLogIn {
   text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 main form {
-  margin-top: 30px;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -870,7 +870,7 @@ footer {
   background-color: rgb(0, 0, 0);
   vertical-align: bottom;
   color: white;
-  justify-content: end;
+  justify-content: space-between;
 }
 @media screen and (max-width: 940px) {
   footer .footerPres {
@@ -878,11 +878,12 @@ footer {
   }
 }
 footer .footerBlock {
-  display: inline-block;
+  display: flex;
   margin: auto;
   border-top: black;
   padding: 10px 20px;
   vertical-align: top;
+  justify-content: space-between;
 }
 footer .footerBlock a {
   text-decoration: none;
