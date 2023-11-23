@@ -126,3 +126,33 @@ main{
         }
     }
 }
+
+main{
+    .homeSm{
+        .contenedorBotonFinal{
+            .aBotonFinal{
+                .botonFinal{
+                    background-color: #6d6767;
+                    border: #7c7878;
+                    color: white;
+                     &:hover{
+                    background-color: rgb(128, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// a{
+//     .btn{
+//         background-color: #6d6767;
+//         border: #7c7878;
+//         color: white;
+//         &:hover{
+//            background-color: rgb(128, 0, 0);  
+//         }
+
+        
+//     }
+// }

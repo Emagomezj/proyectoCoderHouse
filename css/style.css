@@ -524,6 +524,15 @@ main .homeSm .divHomeSm .imgHomeSm1 {
   height: 180px;
 }
 
+main .homeSm .contenedorBotonFinal .aBotonFinal .botonFinal {
+  background-color: #6d6767;
+  border: #7c7878;
+  color: white;
+}
+main .homeSm .contenedorBotonFinal .aBotonFinal .botonFinal:hover {
+  background-color: rgb(128, 0, 0);
+}
+
 main .cuadroComunidad {
   justify-content: center;
 }
