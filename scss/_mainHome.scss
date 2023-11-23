@@ -38,8 +38,8 @@ main{
                 border-color: #6d6767;
                 background-color: #7c7878;
                 &:hover{
-                    background-color: rgb(59, 150, 138);
-                    border-color: rgb(29, 95, 86);
+                    background-color: rgb(128, 0, 0);
+                    border-color: rgb(63, 3, 3);
                 }
             }
         }
@@ -64,27 +64,10 @@ main{
             text-align: center;
             margin: 30px;
         }
-        .tituloHomeSm{
-            margin-top: 10px;
-            font-family: $fFam;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-            text-shadow: $blackShadow;
-            width: 80vw;
-            border-radius: 10px;
-            min-height: 65px;
-            background-color: #000;
-            box-shadow: 10px 10px 20px black;
-        }
-        div{
-            .contenidoHomeSm{
-                font-size: 1.2rem;
-                margin-top: 20px;
-                font-family: $fFam;
-                color: white;
-                text-shadow: $blackShadow;
-            }
-        }
+        .bannerHomeSm{
+                @include cuatrocientos{
+                    font-size: 1rem;
+                }
+            }        
     }
 }

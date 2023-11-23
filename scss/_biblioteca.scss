@@ -1,13 +1,73 @@
 main{
-    span{
-        .aTablaBib{
-            text-decoration: none;
-            color: #000;
-            text-shadow: $whiteShadow;
-            transition: all 0.2s;
+    table{
+        margin-top: 20px;
+        border: 1px solid;
+        tr{
+            .disp{
+                text-align: center;
+            }
+            td{
+                @include seiscientos{
+                    font-size: 0.9rem;
+                }
+                h4{
+                    @include nueveCuarenta{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .rowHead{
+            background-color: black;
+            color: white;
+        }
+        .rowImpar{
+            background-color: darkgray;
+        }
+        .rowPar{
+            background-color: antiquewhite;
+        }
+    }
+    .btnDiv{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        button{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            background-color: darkgrey;
+            border-color: darkgrey;
+            font-size: 1.2rem;
+            color: black;
+            font-weight: normal;
+            text-shadow:     1px 1px 0 darkgrey,
+            1px 1px 0 darkgrey,
+            1px 1px 0 darkgrey,
+            1px 1px 0 darkgrey;
             &:hover{
-                    font-weight: bold;
-                    text-shadow: $whiteShadow;
+                background-color: rgb(128, 0, 0);
+                border-color: rgb(128, 0, 0);
+                color: white;
+                text-shadow: none;
+                font-weight: normal;
+            }
+            &:active{
+                background-color: white;
+                color: black;
+                text-shadow: none;
+                font-weight: normal;
+            }
+            @include nueveNoventayDos{
+                font-size: 1rem;
+            }
+            @include seiscientos{
+                font-size: 0.9rem;
             }
         }
     }

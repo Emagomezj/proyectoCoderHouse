@@ -218,6 +218,7 @@ header {
 }
 .headerHome nav .navList ul li .aInicio:hover {
   font-weight: bold;
+  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
 }
 .headerHome nav .navList ul li a .logIcon {
   text-decoration: none;
@@ -228,7 +229,7 @@ header {
 }
 .headerHome nav .navList ul li a .logIcon:hover {
   font-weight: bold;
-  color: rgb(59, 150, 138);
+  color: rgb(128, 0, 0);
 }
 
 .headerCom {
@@ -343,7 +344,7 @@ header {
 }
 .headerCom nav .navList ul li a .logIcon1:hover {
   font-weight: bold;
-  color: rgb(59, 150, 138);
+  color: rgb(128, 0, 0);
 }
 
 main section .vidInicio {
@@ -384,8 +385,8 @@ main .botonMain a .btn-outline-success {
   background-color: #7c7878;
 }
 main .botonMain a .btn-outline-success:hover {
-  background-color: rgb(59, 150, 138);
-  border-color: rgb(29, 95, 86);
+  background-color: rgb(128, 0, 0);
+  border-color: rgb(63, 3, 3);
 }
 main .videoBack {
   width: 100vh;
@@ -412,25 +413,10 @@ main .homeSm {
     margin: 30px;
   }
 }
-main .homeSm .tituloHomeSm {
-  margin-top: 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
-  width: 80vw;
-  border-radius: 10px;
-  min-height: 65px;
-  background-color: #000;
-  box-shadow: 10px 10px 20px black;
-}
-main .homeSm div .contenidoHomeSm {
-  font-size: 1.2rem;
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+@media screen and (max-width: 400px) {
+  main .homeSm .bannerHomeSm {
+    font-size: 1rem;
+  }
 }
 
 main .cuadroComunidad {
@@ -600,23 +586,112 @@ main .registrarse a:hover {
   font-weight: bold;
 }
 
-.novedades iframe {
+.novedades {
+  justify-content: center;
+  align-items: center;
+}
+.novedades .carousel-inner {
+  align-items: center;
+  justify-content: center;
+}
+.novedades .carousel-inner div iframe {
+  width: 900px;
+  height: 506px;
   margin-top: 30px;
   display: block;
   margin: auto;
   margin-top: 80px;
   margin-bottom: 80px;
 }
-
-main span .aTablaBib {
-  text-decoration: none;
-  color: #000;
-  text-shadow: 1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-  transition: all 0.2s;
+@media screen and (max-width: 940px) {
+  .novedades .carousel-inner div iframe {
+    width: 600px;
+    height: 337px;
+  }
 }
-main span .aTablaBib:hover {
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+@media screen and (max-width: 600px) {
+  .novedades .carousel-inner div iframe {
+    width: 400px;
+    height: 225px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .novedades .carousel-inner div iframe {
+    width: 300px;
+    height: 168px;
+  }
+}
+
+main table {
+  margin-top: 20px;
+  border: 1px solid;
+}
+main table tr .disp {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  main table tr td {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  main table tr td h4 {
+    font-size: 1rem;
+  }
+}
+main table .rowHead {
+  background-color: black;
+  color: white;
+}
+main table .rowImpar {
+  background-color: darkgray;
+}
+main table .rowPar {
+  background-color: antiquewhite;
+}
+main .btnDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main .btnDiv button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+  border-color: darkgrey;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: normal;
+  text-shadow: 1px 1px 0 darkgrey, 1px 1px 0 darkgrey, 1px 1px 0 darkgrey, 1px 1px 0 darkgrey;
+}
+main .btnDiv button:hover {
+  background-color: rgb(128, 0, 0);
+  border-color: rgb(128, 0, 0);
+  color: white;
+  text-shadow: none;
+  font-weight: normal;
+}
+main .btnDiv button:active {
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  font-weight: normal;
+}
+@media screen and (max-width: 992px) {
+  main .btnDiv button {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .btnDiv button {
+    font-size: 0.9rem;
+  }
 }
 
 .contacto .contactoTitulo {
