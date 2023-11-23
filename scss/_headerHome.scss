@@ -9,12 +9,18 @@
         vertical-align: middle;
         min-height: 65px;
     }
+    @include cuatrocientos{
+        min-height: 55px;
+    }
     .logoBrandHome{
         display: flex;
         justify-items: left;
         text-align: left;
         vertical-align: middle;
         padding: 20px 0px 0px 10px;
+        @include cuatrocientos{
+            padding: 15px 0px 0px 0px;
+        }
         a{
             .brandNameHeader{
                 display: inline-block;
@@ -32,12 +38,18 @@
                 @include nueveNoventayDos{
                     font-size: 1.5rem;
                 }
+                @include cuatrocientos{
+                    font-size: 1.2rem;
+                }
             }
             .logoHeader{
                 display: inline-block;
                 height: 40px;
                 @include nueveNoventayDos{
                     height: 30px;
+                }
+                @include cuatrocientos{
+                    height: 25px;
                 }
             }
         }
@@ -46,7 +58,7 @@
     nav{
         button{
             .menuIcon{
-                height: 35px;
+                height: 25px;
             }
         }
         .navList{
@@ -75,6 +87,10 @@
                             font-weight: bold;
                             text-shadow: $blackShadow;
                         }
+                        @include seiscientos{ font-size: 1.5rem;}
+                        @include cuatrocientos{
+                            font-size: 1rem;
+                        }
                     }
                     a{
                         .logIcon{
@@ -86,6 +102,12 @@
                             &:hover{
                                 font-weight: bold;
                                 color: rgb(128, 0, 0);
+                            }
+                            @include seiscientos{
+                                font-size: 1.5rem;
+                            }
+                            @include cuatrocientos{
+                                font-size: 1rem;
                             }
                         }  
                     }

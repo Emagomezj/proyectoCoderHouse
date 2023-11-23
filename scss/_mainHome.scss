@@ -64,10 +64,65 @@ main{
             text-align: center;
             margin: 30px;
         }
-        .bannerHomeSm{
+        .divHomeSm{
+            flex-direction: row;
+            @include cuatrocientos{
+                flex-direction: column;
+            }
+            .titulo1HomeSm{
+                // background-color: #6d6767;
+                border-radius: 20px;
+                font-size: 2rem;
+                font-family: $fFam;
+                font-weight: normal;
+                color: black;
+                font-weight: bold;
+                // text-shadow: $whiteShadow;
+                @include seiscientos{
+                    font-size: 1.5rem;
+                }
                 @include cuatrocientos{
                     font-size: 1rem;
                 }
-            }        
+            }
+            .titulo2HomeSm{
+                // background-color: #6d6767;
+                border-radius: 20px;
+                font-size: 1.5rem;
+                color: white;
+                font-family: $fFam;
+                font-weight: normal;
+                text-shadow: $blackShadow;
+                @include seiscientos{
+                    font-size: 1rem;
+                }
+                @include cuatrocientos{
+                    font-size: 1rem;
+                }
+            }
+            .titulo3HomeSm{
+                //background-color: #6d6767;
+                margin: 20px 0px 20px 0px;
+                border-radius: 20px;
+                font-size: 1.5rem;
+                font-family: $fFam;
+                font-weight: normal;
+                color: white;
+                font-weight:normal;
+                text-shadow: $whiteShadow;
+                @include seiscientos{
+                    font-size: 1.5rem;
+                }
+                @include cuatrocientos{
+                    font-size: 1rem;
+                }
+            }
+            .imgHomeSm{
+                width: 90%;
+            }
+            .imgHomeSm1{
+                height: 180px;
+            }
+        }
     }
 }
