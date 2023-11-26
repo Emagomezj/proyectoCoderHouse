@@ -520,7 +520,7 @@ main .cuadroComunidad div .aForos {
 }
 main .cuadroComunidad div .aForos .btn:hover {
   color: white;
-  text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: normal;
 }
 main .cuadroComunidad div .aForos .btnForos {
   font-size: 1.2rem;
@@ -529,7 +529,7 @@ main .cuadroComunidad div .aForos .btnForos {
   transition: all 0.2s;
 }
 main .cuadroComunidad div .aForos .btnForos:hover {
-  background-color: rgb(59, 150, 138);
+  background-color: rgb(128, 0, 0);
 }
 
 main .logoLogIn {

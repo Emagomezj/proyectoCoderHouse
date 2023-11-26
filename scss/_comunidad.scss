@@ -84,7 +84,7 @@ main{
                 margin-bottom: 40px;
                 .btn:hover{
                     color: white;
-                    text-shadow: $blackShadow;
+                    font-weight: normal;
                 }
                 .btnForos{
                     font-size: 1.2rem;
@@ -92,7 +92,7 @@ main{
                     font-weight: bold;
                     transition: $transition;
                     &:hover{
-                        background-color: rgb(59, 150, 138);
+                        background-color: rgb(128, 0, 0);
                     }
                 }
             }
