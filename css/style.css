@@ -1,98 +1,3 @@
-/*@media (min-width: 992px) and (max-width: 1050px){
-    .overlay p{
-        font-size: 15px;
-    }
-} Listo
-
-@media screen and (max-width: 992px){
-    .headerCom{
-        height: min-content;
-    }
-    .logoBrand{
-        vertical-align: middle;
-        align-items: flex-start;
-    }
-    header{
-        vertical-align: middle;
-        align-items: flex-start;
-    }
-    .navList{
-        justify-content: left;
-        justify-items: left;
-    }
-
-    .logoHeader{
-        height: 30px;
-    }
-    .brandNameHeader{
-        font-size: 1.5rem;
-    }
-    .menuIcon{
-        height: 30px;
-    }
-
-    .headerHome{
-        height: auto;
-        min-height: 60px;
-    }
-} Listo
-
-@media (max-width: 940px) {
-  .footerPres {
-    display: none;
-  }
-  iframe {
-    width: 80vw;
-  }
-} Listo
-
-@media (768px <= width <= 991px) {
-    .overlay p{
-        font-size: 18px;
-    }
-} Listo
-
-@media screen and (max-width: 760px) {
-  .vidInicio {
-    display: none;
-  } X
-
-  .videoBack {
-    display: none;
-  }X
-  .headerHome {
-    position: relative;
-    vertical-align: middle;
-    min-height: 65px;
-  } X
-  header {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    min-height: 65px;
-  } X
-  .botonMain {
-    display: none;
-  } X
-  .homeSm {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 30px;
-  } X
-} Listo
-
-@media (max-width: 600px) {
-    .inputForms{
-        width: 80%
-    }
-} Listo
-
-@media screen and (max-width: 400px) {
-    .overlay p{
-        font-size: 18px;
-    }
-}
-*/
 * {
   margin: 0;
   padding: 0;
@@ -139,6 +44,7 @@ header {
 
 .headerHome {
   height: 50px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
   .headerHome {
@@ -637,6 +543,11 @@ main .logoLogIn a {
 main .logoLogIn a .logoLogInImg {
   height: 100px;
 }
+@media screen and (max-width: 600px) {
+  main .logoLogIn a .logoLogInImg {
+    height: 75px;
+  }
+}
 main .logoLogIn a .brandLogIn {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -644,6 +555,11 @@ main .logoLogIn a .brandLogIn {
   vertical-align: middle;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media screen and (max-width: 600px) {
+  main .logoLogIn a .brandLogIn {
+    font-size: 1.5rem;
+  }
 }
 main form {
   margin-top: 50px;
@@ -866,47 +782,142 @@ main .btnDiv button:active {
   }
 }
 
+.faqsMain div .titleFaqs {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.faqsMain .accordion {
+  width: 80%;
+  background-color: none;
+  box-shadow: 2px solid black;
+  font-size: 1.2rem;
+}
+.faqsMain .accordion .accordion-item {
+  background-color: rgb(219, 219, 219);
+  color: black;
+}
+.faqsMain .accordion .accordion-item .accordion-header .accordion-button {
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+}
+
 footer {
   background-color: rgb(0, 0, 0);
   vertical-align: bottom;
+  align-items: center;
+  justify-content: center;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-@media screen and (max-width: 940px) {
-  footer .footerPres {
-    display: none;
-  }
-}
-footer .footerBlock {
+
+.footerBlock {
   display: flex;
   margin: auto;
   border-top: black;
   padding: 10px 20px;
   vertical-align: top;
-  justify-content: space-between;
+  justify-content: center;
 }
-footer .footerBlock a {
+.footerBlock a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
-footer .footerBlock a img {
+.footerBlock a img {
+  display: flex;
   height: 45px;
+  vertical-align: middle;
 }
-footer .footerBlock a h4 {
+@media screen and (max-width: 600px) {
+  .footerBlock a img {
+    height: 22px;
+  }
+}
+.footerBlock a h4 {
   text-decoration: none;
   color: white;
   transition: all 0.2s;
   font-family: "Roboto", sans-serif;
+  vertical-align: middle;
 }
-footer .footerBlock ul li {
+@media screen and (max-width: 600px) {
+  .footerBlock a h4 {
+    font-size: 1rem;
+  }
+}
+.footerBlock ul {
+  text-align: center;
+}
+.footerBlock ul h3 {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .footerBlock ul h3 {
+    font-size: 0.8rem;
+  }
+}
+.footerBlock ul li {
   list-style: none;
 }
-footer .footerBlock ul .aFooter {
+.footerBlock ul .aFooter {
   text-decoration: none;
   color: white;
   transition: all 0.2s;
 }
-footer .footerBlock ul .aFooter:hover {
+.footerBlock ul .aFooter:hover {
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .footerBlock ul .aFooter {
+    font-size: 0.7rem;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social .socialIcon {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0px 10px 0px 10px;
+  transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 600px) {
+  .social .socialIcon {
+    font-size: 1.2rem;
+    padding: 0px 5px 0px 5px;
+  }
+}
+.social .ig i {
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.social .ig i:hover {
+  color: #d62976;
+  font-size: 2.5rem;
+}
+.social .x i {
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.social .x i:hover {
+  font-size: 2.5rem;
+  color: #00acee;
+}
+.social .yt i {
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.social .yt i:hover {
+  color: red;
+  font-size: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

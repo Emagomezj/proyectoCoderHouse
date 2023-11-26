@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heimdal.ib</title>
+    <!-- SEO -->
+    <meta name="description" content="Encuentra respuestas a tus preguntas más frecuentes sobre nuestra biblioteca online. Obtén información sobre novedades, eventos, y otros servicios que ofrecemos para mejorar tu experiencia.">
+    <title>Heimdal.ib - FAQ's</title>
     <!-- Favicon -->
     <link
       rel="shortcut icon"
@@ -99,9 +101,52 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="faqsMain">
+      <div class="container-fluid align-items-center justify-content-center text-center">
+        <h1 class="titleFaqs"> FAQs</h1>
+      </div>
+      <!-- Accordion -->
+      <div class="accordion container-fluid justify-content-center" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="true" aria-controls="funciona">
+              ¿Cómo funciona el gestor de bibliotecas Heimdal.ib?
+            </button>
+          </h2>
+          <div id="funciona" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Si no tienes una cuenta deberas crear una para poder comenzar a utilizar el gestor. Una vez tengas una, deberás dirigirte a la página <strong>Biblioteca</strong>, cliquear en <strong>crear nueva biblioteca</strong> y colocar el nombre que tendrá dicha biblioteca en el espacio destinado a dicho fin. Luego de crearla y nombrarla deberas hacer click en el botón <strong>añadir</strong>, completar los campos requeridos y ya tendrás cargado tu primer libro.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registrarse" aria-expanded="false" aria-controls="registrarse">
+              ¿Cómo crear una cuenta?
+            </button>
+          </h2>
+          <div id="registrarse" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Haga click en el <strong>botón en forma de puerta</strong> ubicado en la esquina superior derecha y a continuación en <strong>registrarse</strong>. Complete los campos requeridos, una vez enviado ya podrá comenzar a disfrutar de todas las funciones de Heimdal.ib
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#costo" aria-expanded="false" aria-controls="costo">
+              ¿Hay que abonar por los servicios?
+            </button>
+          </h2>
+          <div id="costo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              El acceso al gestor de biblioteca y los servicios de la página <strong>son gratuitos</strong>, solo debe contar con una <strong>cuenta</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="d-flex container-fluid">
-      <div class="footerBlock">
+      <div class="footerBlock col-3">
         <a href="../index.html">
           <img
             src="../img/android-chrome-bk-512x512.png"
@@ -111,8 +156,12 @@
           <h4>Heimdal.ib</h4>
         </a>
       </div>
-
-      <div class="footerBlock">
+      <div class="social col-6">
+        <a class="socialIcon x" href="https://x.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a class="socialIcon yt" href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+        <a class="socialIcon ig" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="footerBlock col-3">
         <ul>
           <h3>¿Necesitas Ayuda?</h3>
           <li><a class="aFooter" href="../html/faqs.html">FAQs</a></li>

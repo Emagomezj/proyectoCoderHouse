@@ -70,14 +70,12 @@ main{
                 flex-direction: column;
             }
             .titulo1HomeSm{
-                // background-color: #6d6767;
                 border-radius: 20px;
                 font-size: 2rem;
                 font-family: $fFam;
                 font-weight: normal;
                 color: black;
                 font-weight: bold;
-                // text-shadow: $whiteShadow;
                 @include seiscientos{
                     font-size: 1.5rem;
                 }
@@ -86,7 +84,6 @@ main{
                 }
             }
             .titulo2HomeSm{
-                // background-color: #6d6767;
                 border-radius: 20px;
                 font-size: 1.5rem;
                 color: white;
@@ -101,7 +98,6 @@ main{
                 }
             }
             .titulo3HomeSm{
-                //background-color: #6d6767;
                 margin: 20px 0px 20px 0px;
                 border-radius: 20px;
                 font-size: 1.5rem;
@@ -143,16 +139,3 @@ main{
         }
     }
 }
-
-// a{
-//     .btn{
-//         background-color: #6d6767;
-//         border: #7c7878;
-//         color: white;
-//         &:hover{
-//            background-color: rgb(128, 0, 0);  
-//         }
-
-        
-//     }
-// }

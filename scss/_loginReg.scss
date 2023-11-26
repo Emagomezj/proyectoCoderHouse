@@ -7,6 +7,9 @@ main{
             text-decoration: none;
             .logoLogInImg{
                 height: 100px;
+                @include seiscientos{
+                    height: 75px;
+                }
             }
             .brandLogIn{
                 font-size: 2rem;
@@ -15,6 +18,9 @@ main{
                 vertical-align: middle;
                 color: rgb(255, 255, 255);
                 text-shadow: $blackShadow;
+                @include seiscientos{
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -33,7 +39,6 @@ main{
             font-weight: bold;
             margin-bottom: 10px;
 
-            // text-align: left;
         }
         input{
             align-items: center;

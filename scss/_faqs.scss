@@ -1,0 +1,28 @@
+.faqsMain{
+    div{
+        .titleFaqs{
+            margin-top: 30px;
+            margin-bottom: 50px;
+            font-family: $fFam;
+            font-weight: bold;
+        }
+    }
+    .accordion{
+        width: 80%;
+        background-color: none;
+        box-shadow: 2px solid black;
+        font-size: 1.2rem;
+        .accordion-item{
+            background-color: rgb(219, 219, 219);
+            color: black;
+            .accordion-header{
+                .accordion-button{
+                    color: white;
+                    background-color: black;
+                    font-size: 1.5rem;
+                }
+            }
+            
+        }
+    }
+}
