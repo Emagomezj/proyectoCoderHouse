@@ -44,7 +44,6 @@ header {
 
 .headerHome {
   height: 50px;
-  justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
   .headerHome {
@@ -64,7 +63,10 @@ header {
     min-height: 55px;
   }
 }
-.headerHome .logoBrandHome {
+.headerHome nav {
+  justify-content: space-between;
+}
+.headerHome nav .logoBrandHome {
   display: flex;
   justify-items: left;
   text-align: left;
@@ -72,11 +74,11 @@ header {
   padding: 20px 0px 0px 10px;
 }
 @media screen and (max-width: 400px) {
-  .headerHome .logoBrandHome {
+  .headerHome nav .logoBrandHome {
     padding: 15px 0px 0px 0px;
   }
 }
-.headerHome .logoBrandHome a .brandNameHeader {
+.headerHome nav .logoBrandHome a .brandNameHeader {
   display: inline-block;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -88,32 +90,35 @@ header {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.headerHome .logoBrandHome a .brandNameHeader:hover {
+.headerHome nav .logoBrandHome a .brandNameHeader:hover {
   font-weight: bold;
 }
 @media screen and (max-width: 992px) {
-  .headerHome .logoBrandHome a .brandNameHeader {
+  .headerHome nav .logoBrandHome a .brandNameHeader {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 400px) {
-  .headerHome .logoBrandHome a .brandNameHeader {
+  .headerHome nav .logoBrandHome a .brandNameHeader {
     font-size: 1.2rem;
   }
 }
-.headerHome .logoBrandHome a .logoHeader {
+.headerHome nav .logoBrandHome a .logoHeader {
   display: inline-block;
   height: 40px;
 }
 @media screen and (max-width: 992px) {
-  .headerHome .logoBrandHome a .logoHeader {
+  .headerHome nav .logoBrandHome a .logoHeader {
     height: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  .headerHome .logoBrandHome a .logoHeader {
+  .headerHome nav .logoBrandHome a .logoHeader {
     height: 25px;
   }
+}
+.headerHome nav button {
+  justify-content: right;
 }
 .headerHome nav button .menuIcon {
   height: 25px;
@@ -227,6 +232,11 @@ header {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .headerCom .logoBrand a .brandNameHeader {
+    font-size: 1.2rem;
+  }
+}
 .headerCom .logoBrand a .logoHeader {
   display: inline-block;
   height: 40px;
@@ -234,6 +244,12 @@ header {
 @media screen and (max-width: 992px) {
   .headerCom .logoBrand a .logoHeader {
     height: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerCom .logoBrand a .logoHeader {
+    height: 25px;
+    padding-bottom: 1px;
   }
 }
 .headerCom nav div .navbar-toggler {
@@ -245,6 +261,16 @@ header {
 @media screen and (max-width: 992px) {
   .headerCom nav div .navbar-toggler .menuIcon {
     height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerCom nav div .navbar-toggler .menuIcon {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerCom nav div .navbar-toggler .menuIcon {
+    font-size: 25px;
   }
 }
 .headerCom nav .navList {
@@ -281,6 +307,16 @@ header {
 .headerCom nav .navList ul li .aInicio:hover {
   font-weight: bold;
 }
+@media screen and (max-width: 600px) {
+  .headerCom nav .navList ul li .aInicio {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerCom nav .navList ul li .aInicio {
+    font-size: 1rem;
+  }
+}
 .headerCom nav .navList ul li a .logIcon1 {
   text-decoration: none;
   font-size: 2rem;
@@ -291,6 +327,16 @@ header {
 .headerCom nav .navList ul li a .logIcon1:hover {
   font-weight: bold;
   color: rgb(128, 0, 0);
+}
+@media screen and (max-width: 600px) {
+  .headerCom nav .navList ul li a .logIcon1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerCom nav .navList ul li a .logIcon1 {
+    font-size: 1rem;
+  }
 }
 
 main section .vidInicio {
