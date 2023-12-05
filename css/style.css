@@ -666,6 +666,11 @@ main .registrarse a:hover {
   justify-content: center;
   align-items: center;
 }
+.novedades .divNov {
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
 .novedades .carousel-inner {
   align-items: center;
   justify-content: center;

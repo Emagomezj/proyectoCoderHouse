@@ -1,6 +1,13 @@
 .novedades{
     justify-content: center;
     align-items: center;
+    .divNov{
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+        .tituloNov{
+        }
+    }
     .carousel-inner{
         align-items: center;
         justify-content: center;
