@@ -105,98 +105,28 @@
       </nav>
     </header>
     <main>
-      <table class="col-12">
+      <div class="divSelBib">
+        <select id="selectCatBib" class="form-select btnSelect" aria-label="Default select example">
+          <option selected>Todas las Categoría</option>
+          <option value="Autor/a">Autor/a</option>
+          <option value="Editorial">Editorial</option>
+          <option value="Género">Género</option>
+          <option value="Título">Título</option>
+        </select>
+        <select id="selectValueBib" class="form-select btnSelect" aria-label="Default select example">
+          <option selected>Todos los valores</option>
+        </select>
+      </div>
+      <table id="tablaBiblioteca" class="col-12">
         <tr class="rowHead">
+          <td><h4>Id</h4></td>
           <td><h4>Título</h4></td>
+          <td>
+            <h4>Autor/a</h4>
+          </td>
           <td><h4>Editorial</h4></td>
           <td><h4>Edición</h4></td>
-          <td><h4>ID</h4></td>
-          <td class="disp"><h4>Disponibilidad</h4></td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowImpar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
-        <tr class="rowPar">
-          <td>Las palabras y las cosas</td>
-          <td>Siglo XXI Editores</td>
-          <td>1° Ed</td>
-          <td>0001</td>
-          <td class="disp">5</td>
-        </tr>
+          <td><h4>Género</h4></td>
       </table>
       <div class="btnDiv">
         <button type="button" class="btn btn-warning">
@@ -251,7 +181,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/biblioteca.js">
-    </script>
+    <script type="module" src="../js/biblioteca.js"></script>
+    <script type="module" src="../js/db.js"></script>
   </body>
 </html>
