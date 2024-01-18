@@ -45,7 +45,15 @@ function addRow(obj, clase){
 function actualizarOpt(){
     let categoria = selectCatBib.value;
     selectValueBib.innerHTML = '<option selected>Todos los valores</option>';
-
+    tabla.innerHTML = `<tr class="rowHead">
+    <td><h4>Id</h4></td>
+    <td><h4>Título</h4></td>
+    <td>
+      <h4>Autor/a</h4>
+    </td>
+    <td><h4>Editorial</h4></td>
+    <td><h4>Edición</h4></td>
+    <td><h4>Género</h4></td>`;
 
     if(cat.indexOf(categoria) < 0){
         for(let i = 0; i < libros.length; i++){
@@ -92,7 +100,8 @@ function actualizarOpt(){
                     selectValueBib.appendChild(opt)
                 }
                 break
-        }   
+        }  
+        actualizarVal()
     }
 }
 
@@ -112,6 +121,10 @@ function actualizarVal(){
           <td><h4>Género</h4></td>`;
     let listLib = []
     switch (c){
+        case 'Todas las categorías':
+            listLib = libros
+            console.log(listLib)
+            break;
         case 'Título':
            if(v == 'Todos los valores'){
             listLib = libros
