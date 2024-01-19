@@ -17,6 +17,7 @@ let tituloArr = Array.from(new Set (libros.map(elem => elem['Título'])));
 let autorArr = Array.from(new Set (libros.map(elem => elem['Autor/a'])));
 let editorialArr = Array.from(new Set (libros.map(elem => elem['Editorial'])));
 
+//Función para crear filas
 
 function addRow(obj, clase){
     let row = tabla.insertRow();
@@ -41,6 +42,8 @@ function addRow(obj, clase){
     celEd.innerText = `${ed}° Ed.`;
     celGen.innerText = genero;
 }
+
+// Función para actualizar el recuadro de values (2do)
 
 function actualizarOpt(){
     let categoria = selectCatBib.value;
@@ -105,6 +108,8 @@ function actualizarOpt(){
     }
 }
 
+//Función actualizar tabla en relación a los filtros aplicados
+
 function actualizarVal(){
     let c = selectCatBib.value
     console.log(c)
@@ -155,6 +160,7 @@ function actualizarVal(){
 }
 
 actualizarOpt()
+
 selectCatBib.addEventListener('change', actualizarOpt)
 
 selectValueBib.addEventListener('change', actualizarVal);
