@@ -326,7 +326,7 @@ header {
 }
 .headerCom nav .navList ul li a .logIcon1:hover {
   font-weight: bold;
-  color: rgb(128, 0, 0);
+  color: #800000;
 }
 @media screen and (max-width: 600px) {
   .headerCom nav .navList ul li a .logIcon1 {

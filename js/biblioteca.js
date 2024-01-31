@@ -1,6 +1,6 @@
-//Importar biblioteca
-import { dbLib } from "./db.js";
-const libros = dbLib;
+//Importar base de datos
+import { usrs } from "./db.js";
+const libros = usrs[0].biblioteca;
 
 // Tomar objetos para modificar
 

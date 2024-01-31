@@ -66,9 +66,14 @@
           id="contraseña"
           placeholder="Contraseña"
         />
+        <div id="manSes">
+          <p>Mantener sesión iniciada</p>
+          <input id="chkbx" type="checkbox" value= "mantener_sesión" name="condiciones" >
+        </div>
         <div>
           <input id="btnLogIn" type="submit" value="Iniciar sesión" />
         </div>
+        <div id="fVal"></div>
       </form>
       <div class="registrarse">
         <a href="../html/registrarse.html">Registrarse</a>
@@ -122,5 +127,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="../js/log.js"></script>
+    <script type="module" src="../js/db.js"></script>
   </body>
 </html>

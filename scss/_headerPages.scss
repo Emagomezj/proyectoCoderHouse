@@ -112,15 +112,21 @@
             }
           }
           a {
+            .logIcon{
+              text-decoration: none;
+              font-size: 2rem;
+              width: 20px;
+              color: #800000;
+            }
             .logIcon1 {
               text-decoration: none;
               font-size: 2rem;
               width: 20px;
               color: #ffffff;
               transition: $transition;
-              &:hover {
+              &:hover{
                 font-weight: bold;
-                color: rgb(128, 0, 0);
+                color: #800000;
               }
               @include seiscientos {
                 font-size: 1.5rem;
