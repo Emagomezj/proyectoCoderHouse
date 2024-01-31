@@ -155,44 +155,44 @@ const usrs = [
         email: 'janedoe@gmail.com',
         biblioteca:[
             {
-            'ID': '',
-            'Título': '',
-            'Autor/a': '',
-            'Editorial': '',
-            'Edición': '',
-            'Género': ''
+            'ID': '001',
+            'Título': 'Orgullo y Prejuicio',
+            'Autor/a': 'Austen, J.',
+            'Editorial': 'Del Fondo',
+            'Edición': '1',
+            'Género': 'Ficción'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '002',
+                'Título': 'El calibán y la bruja',
+                'Autor/a': 'Federici, S.',
+                'Editorial': 'Tinta Limón',
+                'Edición': '1',
+                'Género': 'Ensayo'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '003',
+                'Título': 'Los diez negritos',
+                'Autor/a': 'Christie, A.',
+                'Editorial': 'Planeta',
+                'Edición': '1',
+                'Género': 'Terror'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '004',
+                'Título': 'Diccionario Ilustrado',
+                'Autor/a': '-',
+                'Editorial': 'Atalaya',
+                'Edición': '14',
+                'Género': 'Diccionario'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '005',
+                'Título': 'La razón de mi vida',
+                'Autor/a': 'Panella de Silva, M.',
+                'Editorial': 'Punto de Encuentro',
+                'Edición': '3',
+                'Género': 'Biografía'
             }
         ]
     },
@@ -204,44 +204,44 @@ const usrs = [
         email: 'juanperez@gmail.com',
         biblioteca:[
             {
-            'ID': '',
-            'Título': '',
-            'Autor/a': '',
-            'Editorial': '',
-            'Edición': '',
-            'Género': ''
+            'ID': '001',
+            'Título': 'Primer Libro',
+            'Autor/a': 'Alguien',
+            'Editorial': 'Alguna',
+            'Edición': '1',
+            'Género': 'Ficción'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '002',
+                'Título': 'Segundo Libro',
+                'Autor/a': 'Alguien_1',
+                'Editorial': 'Alguna_1',
+                'Edición': '1',
+                'Género': 'Ensayo'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '003',
+                'Título': 'Tercer Libro',
+                'Autor/a': 'Alguien_2',
+                'Editorial': 'Alguna_2',
+                'Edición': '1',
+                'Género': 'Terror'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '004',
+                'Título': 'Cuarto Libro',
+                'Autor/a': 'Alguien_3',
+                'Editorial': 'Alguna_3',
+                'Edición': '1',
+                'Género': 'Autobiografía'
             },
             {
-                'ID': '',
-                'Título': '',
-                'Autor/a': '',
-                'Editorial': '',
-                'Edición': '',
-                'Género': ''
+                'ID': '005',
+                'Título': 'Quinto Libro',
+                'Autor/a': 'Alguien_4',
+                'Editorial': 'Alguna_4',
+                'Edición': '1',
+                'Género': 'Biografía'
             }
         ]
     }   

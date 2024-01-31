@@ -1,6 +1,8 @@
 //Importar base de datos
 import { usrs } from "./db.js";
-const libros = usrs[0].biblioteca;
+const nUser = localStorage.getItem('nUser')
+console.log(nUser)
+const libros = usrs[nUser].biblioteca;
 
 // Tomar objetos para modificar
 
