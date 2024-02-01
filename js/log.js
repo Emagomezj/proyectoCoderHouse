@@ -24,9 +24,17 @@ function login(u,c){
             localStorage.setItem('log', 'true');
             localStorage.setItem('name', usrs[i].name);
             localStorage.setItem('email', usrs[i].email);
-            let validation = true
-            window.location.pathname = '/html/biblioteca.html';
-            return console.log('Inicio de sesión exitoso')
+            let validation = true;
+            console.log('Inicio de sesión exitoso')
+            Swal.fire({
+                title: "¡Bienvenidx!",
+                text: "¡Ha iniciado sesión con éxito!",
+                icon: "success"
+              }).then((result) => {
+                if(result.isConfirmed){
+                    window.location.pathname = '/html/biblioteca.html';
+                }
+              });
         }
     }
     if(!validation){
