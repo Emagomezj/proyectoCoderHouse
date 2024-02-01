@@ -317,6 +317,15 @@ header {
     font-size: 1rem;
   }
 }
+.headerCom nav .navList ul li a .logIcon {
+  text-decoration: none;
+  font-size: 2rem;
+  width: 20px;
+  color: #800000;
+}
+.headerCom nav .navList ul li a .logoUsr {
+  width: 40px;
+}
 .headerCom nav .navList ul li a .logIcon1 {
   text-decoration: none;
   font-size: 2rem;

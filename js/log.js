@@ -8,6 +8,11 @@ const chkbx = document.querySelector('#chkbx');
 const fVal = document.querySelector('#fVal');
 let casa = 'casa'
 
+/********* Si estas logueado que redirija ******** */
+
+if(localStorage.getItem('name')){
+    window.location.pathname = '/html/biblioteca.html'
+  }
 
 /***********   Función Login    **************** */
 
@@ -20,6 +25,7 @@ function login(u,c){
             localStorage.setItem('name', usrs[i].name);
             localStorage.setItem('email', usrs[i].email);
             let validation = true
+            window.location.pathname = '/html/biblioteca.html';
             return console.log('Inicio de sesión exitoso')
         }
     }
