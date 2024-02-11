@@ -14,6 +14,7 @@ if(localStorage.getItem('name')){
       <button id="cerrSesBtn"> Cerrar sesión</button>
     </ul>
     </div>`
+    console.log('estas en el index')
   } else {
     logHeader.innerHTML = `
     <button id="btnDdwn" class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
