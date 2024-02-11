@@ -1,3 +1,8 @@
+/************* Redirigir en caso de no estar logueado ****************/
+if(!localStorage.getItem('name') &&  window.location.pathname == '/proyectoCoderHouse/html/biblioteca.html'){
+    window.location.pathname = '/proyectoCoderHouse/html/log-in.html'
+}
+
 //Importar base de datos
 
 const nUser = localStorage.getItem('nUser')
