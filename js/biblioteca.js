@@ -1,8 +1,31 @@
 //Importar base de datos
-import { usrs } from "./db.js";
+
 const nUser = localStorage.getItem('nUser')
-console.log(nUser)
-const libros = usrs[nUser].biblioteca;
+
+const usrLoad = async () =>{
+    try {
+        const libros = []
+        const endPoint = '../json/db.json'
+        const resp = await fetch(endPoint);
+        const usrs = await resp.json();
+        libros.push(...usrs[nUser].biblioteca);
+        return libros;
+      } catch (error) {
+        Swal.fire({
+          title: 'Error',
+          text: 'Ha ocurrido un error con el servidor',
+          icon: 'error',
+          confirmButtonText: 'Aceptar' 
+        }).then((result) => {
+          if(result.isConfirmed){
+              window.location.pathname = '/html/biblioteca.html';
+          }
+        })
+      }
+}
+const libros = await usrLoad()
+
+
 
 // Tomar objetos para modificar
 
@@ -18,6 +41,8 @@ let generoArr = Array.from(new Set (libros.map(elem => elem['Género'])));
 let tituloArr = Array.from(new Set (libros.map(elem => elem['Título'])));
 let autorArr = Array.from(new Set (libros.map(elem => elem['Autor/a'])));
 let editorialArr = Array.from(new Set (libros.map(elem => elem['Editorial'])));
+
+
 
 //Función para crear filas
 
@@ -114,9 +139,7 @@ function actualizarOpt(){
 
 function actualizarVal(){
     let c = selectCatBib.value
-    console.log(c)
     let v = selectValueBib.value
-    console.log(v)
     tabla.innerHTML = `<tr class="rowHead">
           <td><h4>Id</h4></td>
           <td><h4>Título</h4></td>
@@ -130,7 +153,6 @@ function actualizarVal(){
     switch (c){
         case 'Todas las categorías':
             listLib = libros
-            console.log(listLib)
             break;
         case 'Título':
            if(v == 'Todos los valores'){

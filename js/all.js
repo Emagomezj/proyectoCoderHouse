@@ -38,19 +38,7 @@ if(localStorage.getItem('name')){
     if(window.location.pathname == '/html/biblioteca.html'){
       window.location.pathname = '/html/log-in.html'
     }
-    /*
-    // Evento al pasar el cursor sobre el elemento
-     logHeader_icon.addEventListener('click', ()=> {
-      window.location.pathname = '/log-in.html';
-      console.log('has hecho click')
-     })
-     logHeader.addEventListener('mouseover', function() {logHeader_icon.innerHTML = `<i class='bi bi-door-open-fill logIcon1' style='color: #800000'></i>`;
-      });
-    // Evento al alejar el cursor del elemento
-    logHeader.addEventListener('mouseout', function() {
-      logHeader_icon.innerHTML = 
-      `<i class='bi bi-door-closed-fill logIcon1'></i>`;
-    }); */
+
 }
 
 
