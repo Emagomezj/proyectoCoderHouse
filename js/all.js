@@ -20,7 +20,7 @@ if(localStorage.getItem('name')){
 
   cerrSesBtn.addEventListener('click', () => {
     localStorage.clear();
-    window.location.pathname = '/index.html'
+    window.location.pathname = '/proyectoCoderHouse/index.html'
     //location.reload()
   })
   
@@ -35,8 +35,8 @@ if(localStorage.getItem('name')){
   ulDdwn.style.border = '2px solid black';
   ulDdwn.style.background = 'black';
 } else {
-    if(window.location.pathname == '/html/biblioteca.html'){
-      window.location.pathname = '/html/log-in.html'
+    if(window.location.pathname == '/proyectoCoderHouse/html/biblioteca.html'){
+      window.location.pathname = '/proyectoCoderHouse/html/log-in.html'
     }
 
 }

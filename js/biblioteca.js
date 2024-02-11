@@ -18,7 +18,7 @@ const usrLoad = async () =>{
           confirmButtonText: 'Aceptar' 
         }).then((result) => {
           if(result.isConfirmed){
-              window.location.pathname = '/html/biblioteca.html';
+              window.location.pathname = '/proyectoCoderHouse/html/biblioteca.html';
           }
         })
       }

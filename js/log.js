@@ -11,7 +11,7 @@ const loader = document.querySelector('#divLoaderLog')
 /********* Si estas logueado que redirija ******** */
 
 if(localStorage.getItem('name')){
-    window.location.pathname = '/html/biblioteca.html'
+    window.location.pathname = '/proyectoCoderHouse/html/biblioteca.html'
   }
 
 /***********   Función Login    **************** */
@@ -34,14 +34,14 @@ function login(u,c,a){
                 showConfirmButton: false
               }).then((result) => {
                 if(result.isConfirmed){
-                    window.location.pathname = '/html/biblioteca.html';
+                    window.location.pathname = '/proyectoCoderHouse/html/biblioteca.html';
                 }
               });
               setTimeout(() => {
                 Swal.close();
               }, 800);
               setTimeout(()=>{
-                window.location.pathname = '/html/biblioteca.html';
+                window.location.pathname = '/proyectoCoderHouse/html/biblioteca.html';
               }, 801)
         }
     }
@@ -77,7 +77,7 @@ const logEvent = async () => {
       confirmButtonText: 'Aceptar' 
     }).then((result) => {
       if(result.isConfirmed){
-          window.location.pathname = '/html/log-in.html';
+          window.location.pathname = '/proyectoCoderHouse/html/log-in.html';
       }
     })
   }
